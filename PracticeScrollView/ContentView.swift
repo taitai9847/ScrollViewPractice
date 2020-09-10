@@ -42,7 +42,8 @@ struct ContentView: View {
 								.font(.title)
 								.bold()
 								.frame(width: 340, height: 20, alignment: .leading)
-							ScrollView(.horizontal) {
+							//インジケーター無し
+							ScrollView(.horizontal, showsIndicators: false) {
 								HStack(spacing: 20) {
 									ForEach(0..<30) {num in
 										//cornerRadiusありの場合の書き方
